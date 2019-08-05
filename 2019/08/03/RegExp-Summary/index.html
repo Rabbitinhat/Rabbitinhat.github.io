@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Regular expression(正則表達式), 主要用於處理, 檢查strings(字符串) Creating RegExpJS中, regexp是一種對象, 有兩種構造方式 RegExp構造函數模式 1let reg = new RegExp(&quot;abc&quot;) //=&amp;gt;匹配字符串&quot;abc&quot;  表達式模式(在//内的特殊字符(對於regexp有特殊含義的字符)需要preserved(轉義)">
+    <meta name="description" content="Regular expression(正則表達式), 主要用於處理, 檢查strings(字符串) Creating RegExpJS中, regexp是一種對象, 有兩種構造方式 RegExp構造函數模式 1234567let reg = new RegExp(&quot;abc&quot;) //=&amp;gt;匹配字符串&quot;abc&quot;let reg = new RegExp(&quot;\\b\\d+\\b&quot;, &quot;g&quot;) //=&amp;">
 <meta name="keywords" content="summary,Regular Expression,JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RegExp-Summary">
 <meta property="og:url" content="http://yoursite.com/2019/08/03/RegExp-Summary/index.html">
 <meta property="og:site_name" content="RabbitinHat">
-<meta property="og:description" content="Regular expression(正則表達式), 主要用於處理, 檢查strings(字符串) Creating RegExpJS中, regexp是一種對象, 有兩種構造方式 RegExp構造函數模式 1let reg = new RegExp(&quot;abc&quot;) //=&amp;gt;匹配字符串&quot;abc&quot;  表達式模式(在//内的特殊字符(對於regexp有特殊含義的字符)需要preserved(轉義)">
+<meta property="og:description" content="Regular expression(正則表達式), 主要用於處理, 檢查strings(字符串) Creating RegExpJS中, regexp是一種對象, 有兩種構造方式 RegExp構造函數模式 1234567let reg = new RegExp(&quot;abc&quot;) //=&amp;gt;匹配字符串&quot;abc&quot;let reg = new RegExp(&quot;\\b\\d+\\b&quot;, &quot;g&quot;) //=&amp;">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-08-03T15:01:25.394Z">
+<meta property="og:updated_time" content="2019-08-04T14:45:26.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RegExp-Summary">
-<meta name="twitter:description" content="Regular expression(正則表達式), 主要用於處理, 檢查strings(字符串) Creating RegExpJS中, regexp是一種對象, 有兩種構造方式 RegExp構造函數模式 1let reg = new RegExp(&quot;abc&quot;) //=&amp;gt;匹配字符串&quot;abc&quot;  表達式模式(在//内的特殊字符(對於regexp有特殊含義的字符)需要preserved(轉義)">
+<meta name="twitter:description" content="Regular expression(正則表達式), 主要用於處理, 檢查strings(字符串) Creating RegExpJS中, regexp是一種對象, 有兩種構造方式 RegExp構造函數模式 1234567let reg = new RegExp(&quot;abc&quot;) //=&amp;gt;匹配字符串&quot;abc&quot;let reg = new RegExp(&quot;\\b\\d+\\b&quot;, &quot;g&quot;) //=&amp;">
     
     
         
@@ -101,7 +101,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-RegExp"><span class="toc-number">1.</span> <span class="toc-text">Creating RegExp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pattern"><span class="toc-number">2.</span> <span class="toc-text">pattern</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#特殊字符"><span class="toc-number">2.1.</span> <span class="toc-text">特殊字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#匹配模式"><span class="toc-number">2.2.</span> <span class="toc-text">匹配模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#method"><span class="toc-number">3.</span> <span class="toc-text">method</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RegExp-test-string"><span class="toc-number">3.1.</span> <span class="toc-text">RegExp.test(string)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RegExp-exec-string-amp-String-match-regexp"><span class="toc-number">3.2.</span> <span class="toc-text">RegExp.exec(string) &amp; String.match(regexp)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-replace-regexp-string"><span class="toc-number">3.3.</span> <span class="toc-text">String.replace(regexp, string)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Backtracking"><span class="toc-number">4.</span> <span class="toc-text">Backtracking</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-RegExp"><span class="toc-number">1.</span> <span class="toc-text">Creating RegExp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pattern"><span class="toc-number">2.</span> <span class="toc-text">pattern</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#特殊字符"><span class="toc-number">2.1.</span> <span class="toc-text">特殊字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options"><span class="toc-number">2.2.</span> <span class="toc-text">Options</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#method"><span class="toc-number">3.</span> <span class="toc-text">method</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RegExp-test-string"><span class="toc-number">3.1.</span> <span class="toc-text">RegExp.test(string)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RegExp-exec-string-amp-String-match-regexp"><span class="toc-number">3.2.</span> <span class="toc-text">RegExp.exec(string) &amp; String.match(regexp)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#RegExp-lastIndex"><span class="toc-number">3.2.1.</span> <span class="toc-text">RegExp.lastIndex</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-replace-regexp-string"><span class="toc-number">3.3.</span> <span class="toc-text">String.replace(regexp, string)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第二個參數"><span class="toc-number">3.3.1.</span> <span class="toc-text">第二個參數</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-search-regexp"><span class="toc-number">3.4.</span> <span class="toc-text">String.search(regexp)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Backtracking"><span class="toc-number">4.</span> <span class="toc-text">Backtracking</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Greed"><span class="toc-number">5.</span> <span class="toc-text">Greed</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -148,8 +148,9 @@
     <p><code>Regular expression</code>(正則表達式), 主要用於處理, 檢查<code>strings</code>(字符串)</p>
 <h2 id="Creating-RegExp"><a href="#Creating-RegExp" class="headerlink" title="Creating RegExp"></a>Creating RegExp</h2><p>JS中, regexp是一種對象, 有兩種構造方式</p>
 <p><code>RegExp</code>構造函數模式</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"abc"</span>) <span class="comment">//=&gt;匹配字符串"abc"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"abc"</span>) <span class="comment">//=&gt;匹配字符串"abc"</span></span><br><span class="line"><span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"\\b\\d+\\b"</span>, <span class="string">"g"</span>) <span class="comment">//=&gt; 匹配 1001 11</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 對字符串形式的regexp進行轉義操作 REVIEW </span></span><br><span class="line"><span class="keyword">let</span> text = <span class="string">"dea+hl[]rd"</span> <span class="comment">//=&gt;匹配"dea+h1[]rd"</span></span><br><span class="line"><span class="keyword">let</span> <span class="built_in">escape</span> = text.replace(<span class="regexp">/[\\[.+*?()&#123;|^$&#125;]/g</span>, <span class="string">"\\$&amp;"</span>)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">escape</span>) <span class="comment">//=&gt; dea\+hl\[]rd</span></span><br></pre></td></tr></table></figure>
 
+<p>構造函數可以傳入兩個參數, 第一個參數是字符串形式的regexp(不需要<code>//</code>包裹, 其中的<code>\</code>需要轉義, 可以使用變量值進行組合), 第二個參數為regexp的模式</p>
 <p>表達式模式(在//内的特殊字符(對於regexp有特殊含義的字符)需要preserved(轉義))</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> reg1 = <span class="regexp">/abc/</span></span><br><span class="line"><span class="keyword">let</span> reg2 = <span class="regexp">/abc\//</span> <span class="comment">//=&gt;匹配 "abc\"</span></span><br><span class="line"><span class="keyword">let</span> reg3 = <span class="regexp">/abc\+/</span> <span class="comment">//=&gt;匹配 "abc+"</span></span><br></pre></td></tr></table></figure>
 
@@ -229,6 +230,10 @@
 <td>捕獲組, 儅特殊字符(+*?)應用于<code>()</code>包含的字符后, 表示應用於整個捕獲組, 否則只應用於單個字符, 同時捕獲組的結果也會被一些RegExp類型方法保存到返回結果中(<code>.exec</code>, <code>.match</code>)</td>
 </tr>
 <tr>
+<td align="left"><!-- 斷言 --></td>
+<td></td>
+</tr>
+<tr>
 <td align="left">^</td>
 <td>匹配string開頭位置</td>
 </tr>
@@ -245,7 +250,31 @@
 <td></td>
 </tr>
 </tbody></table>
-<h3 id="匹配模式"><a href="#匹配模式" class="headerlink" title="匹配模式"></a>匹配模式</h3><h2 id="method"><a href="#method" class="headerlink" title="method"></a>method</h2><h3 id="RegExp-test-string"><a href="#RegExp-test-string" class="headerlink" title="RegExp.test(string)"></a>RegExp.test(string)</h3><p>返回<code>Boolean</code>(<code>true/false</code>)值, 表示<code>regexp</code>是否匹配<code>string</code></p>
+<h3 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h3><table>
+<thead>
+<tr>
+<th align="left">Options</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">g</td>
+<td><code>global</code> 取得所有匹配</td>
+</tr>
+<tr>
+<td align="left">i</td>
+<td><code>case insensitive</code> 忽略匹配字符的大小寫</td>
+</tr>
+<tr>
+<td align="left">y</td>
+<td><code>sticky</code> 只有儅下一次匹配, 從<code>regexp.lastIndex</code>值的位置成功進行匹配時 FIXME</td>
+</tr>
+<tr>
+<td align="left">m</td>
+<td><code>multipy line</code> 進行多行匹配, 默認情況下, regexp只對一行文本進行匹配</td>
+</tr>
+</tbody></table>
+<h2 id="method"><a href="#method" class="headerlink" title="method"></a>method</h2><h3 id="RegExp-test-string"><a href="#RegExp-test-string" class="headerlink" title="RegExp.test(string)"></a>RegExp.test(string)</h3><p>返回<code>Boolean</code>(<code>true/false</code>)值, 表示<code>regexp</code>是否匹配<code>string</code></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> reg = <span class="regexp">/abc/</span></span><br><span class="line"><span class="built_in">console</span>.log(reg.test(<span class="string">"accabcds"</span>)) <span class="comment">//=&gt;true</span></span><br><span class="line"><span class="built_in">console</span>.log(reg.test(<span class="string">"accvvva"</span>)) <span class="comment">//=&gt;false</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="RegExp-exec-string-amp-String-match-regexp"><a href="#RegExp-exec-string-amp-String-match-regexp" class="headerlink" title="RegExp.exec(string) &amp; String.match(regexp)"></a>RegExp.exec(string) &amp; String.match(regexp)</h3><p>如果沒有匹配的字符串, 返回<code>null</code>; 否則返回一個帶有匹配信息的<code>array</code></p>
@@ -279,11 +308,23 @@
 <td>? FIXME</td>
 </tr>
 </tbody></table>
+<p>儅運行<code>match</code>方法時, 如果傳入的regexp使用<code>g</code>模式, 則返回值為包含全部匹配結果的數組(只包含整個regexp匹配的結果, <em>不包含捕獲組</em>)</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">`abb cbb zbb ebb 101bb`</span>.match(<span class="regexp">/(.)bb\b/g</span>))</span><br></pre></td></tr></table></figure>
+
+<h4 id="RegExp-lastIndex"><a href="#RegExp-lastIndex" class="headerlink" title="RegExp.lastIndex"></a>RegExp.lastIndex</h4><p>RegExp包含一些屬性(property), 其中, lastIndex屬性表示下一次匹配開始在字符串中的位置, 實際操作中, 只用在使用<code>g/y</code>模式, 同時運行exec()方法時, lastIndex才會發生作用, 否則lastIndex在每次匹配后, 會重置為0</p>
+<p>儅使用<code>g/y</code>模式時, 每次調用<code>exec</code>, lastIndex都會更新到下一次匹配開始的位置, 如果此次匹配不成功, lastIndex則重置爲0; 由於一次匹配成功后, lastIndex并不會自動重置爲0, 儅下一次使用同一<code>RegExp</code>變量進行匹配時, 就會從當前變量的lastIndex值指向的位置進行匹配, 需要注意</p>
 <h3 id="String-replace-regexp-string"><a href="#String-replace-regexp-string" class="headerlink" title="String.replace(regexp, string)"></a>String.replace(regexp, string)</h3><p>通過regexp將匹配到的string替換為其他結果</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"Borobudur"</span>.replace(<span class="regexp">/[ou]/</span>, <span class="string">"a"</span>)) <span class="comment">//=&gt; "Barobudur"</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"Borobudur"</span>.replace(<span class="regexp">/[ou]/g</span>, <span class="string">"a"</span>)) <span class="comment">//=&gt; "Barabadar"</span></span><br></pre></td></tr></table></figure>
+
+<p>儅regexp不包含<code>g</code>選項時, 只進行一次匹配, 替換后就返回結果; 包含<code>g</code>選項時, 取得所有匹配, 替換后返回結果</p>
+<h4 id="第二個參數"><a href="#第二個參數" class="headerlink" title="第二個參數"></a>第二個參數</h4><p><code>$1-$n</code> 選擇<code>()</code>捕獲的匹配項, n為匹配項的次數; <code>$&amp;</code> 選擇整個匹配項</p>
+<p>也可使用<code>function</code>作爲第二個參數, 以匹配項作爲參數(第一參數為整個匹配, 其餘參數依次為捕獲項), 函數的返回值為替換項</p>
+<h3 id="String-search-regexp"><a href="#String-search-regexp" class="headerlink" title="String.search(regexp)"></a>String.search(regexp)</h3><p>返回第一次匹配的位置(不論是否有模式<code>g</code>), 否則返回-1</p>
 <h2 id="Backtracking"><a href="#Backtracking" class="headerlink" title="Backtracking"></a>Backtracking</h2><p>儅regexp進行匹配時, 每讀取表達式一個模式, 就會進行最大可能的匹配, 儅進入到表達式<br>下個匹配模式時, 如果沒有找到合適的匹配, 就會減少上次匹配的結果的最後一個字符(回溯backtracking),<br>再次進行匹配. 反復操作直到找到合適的匹配或完全找不到匹配.</p>
 <p>同樣, 在面對多分支的表達式時, 表達式本身并不對分支進行選擇, 而是按照分支在表達式<br>中的順序逐個進行匹配. 在進入分支前, 表達式會記錄當前的位置. 如果當前分支未找到匹<br>配的結果, 就會返回之前記錄的位置(backtracking)重新進入另一分支. 儅在分支中找到合適的匹配, 就會<br>停止其他分支的匹配, 執行表達式下一個模式的匹配.</p>
 <p>大量的回溯(backtracking)操作會消耗大量的時間, 實際操作中要盡可能避免</p>
-
+<h2 id="Greed"><a href="#Greed" class="headerlink" title="Greed"></a>Greed</h2><p>匹配時, regexp(<code>*?+{n}</code>)會盡可能匹配最大情況; 在(<code>*?+{n}</code>)后面添加<code>?</code>可以使得它們變爲<code>nogreedy</code>, 匹配最小情況</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"1 /* a */ + /* b */ 2"</span>.replace(<span class="regexp">/\/\*.*\*\//g</span>, <span class="string">""</span>)) <span class="comment">//=&gt; 1 2 match("/* a */ + /* b */")</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">"1 /* a */ + /* b */ 2"</span>.replace(<span class="regexp">/\/\*.*?\*\//g</span>, <span class="string">""</span>)) <span class="comment">// ==&gt; 1 + 2 match(1. /* a */, 2. /* b */)</span></span><br></pre></td></tr></table></figure>
   </div>
 </article>
 
@@ -308,7 +349,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-RegExp"><span class="toc-number">1.</span> <span class="toc-text">Creating RegExp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pattern"><span class="toc-number">2.</span> <span class="toc-text">pattern</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#特殊字符"><span class="toc-number">2.1.</span> <span class="toc-text">特殊字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#匹配模式"><span class="toc-number">2.2.</span> <span class="toc-text">匹配模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#method"><span class="toc-number">3.</span> <span class="toc-text">method</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RegExp-test-string"><span class="toc-number">3.1.</span> <span class="toc-text">RegExp.test(string)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RegExp-exec-string-amp-String-match-regexp"><span class="toc-number">3.2.</span> <span class="toc-text">RegExp.exec(string) &amp; String.match(regexp)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-replace-regexp-string"><span class="toc-number">3.3.</span> <span class="toc-text">String.replace(regexp, string)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Backtracking"><span class="toc-number">4.</span> <span class="toc-text">Backtracking</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-RegExp"><span class="toc-number">1.</span> <span class="toc-text">Creating RegExp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pattern"><span class="toc-number">2.</span> <span class="toc-text">pattern</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#特殊字符"><span class="toc-number">2.1.</span> <span class="toc-text">特殊字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options"><span class="toc-number">2.2.</span> <span class="toc-text">Options</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#method"><span class="toc-number">3.</span> <span class="toc-text">method</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#RegExp-test-string"><span class="toc-number">3.1.</span> <span class="toc-text">RegExp.test(string)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RegExp-exec-string-amp-String-match-regexp"><span class="toc-number">3.2.</span> <span class="toc-text">RegExp.exec(string) &amp; String.match(regexp)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#RegExp-lastIndex"><span class="toc-number">3.2.1.</span> <span class="toc-text">RegExp.lastIndex</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-replace-regexp-string"><span class="toc-number">3.3.</span> <span class="toc-text">String.replace(regexp, string)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第二個參數"><span class="toc-number">3.3.1.</span> <span class="toc-text">第二個參數</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-search-regexp"><span class="toc-number">3.4.</span> <span class="toc-text">String.search(regexp)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Backtracking"><span class="toc-number">4.</span> <span class="toc-text">Backtracking</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Greed"><span class="toc-number">5.</span> <span class="toc-text">Greed</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
